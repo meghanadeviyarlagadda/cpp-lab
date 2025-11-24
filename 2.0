@@ -1,0 +1,48 @@
+#include<iostream> using namespace std; class vehicle{
+public:
+vehicle(){
+cout<<"This is a vehicle"<<endl;}
+};
+class car:public vehicle
+{
+public:
+car(){
+cout<<"This vehicle is a car"<<endl;
+}
+};
+int main()
+{
+cout<<"Roll No:24B11AI254"<<endl;
+car obj; return 0;
+}
+Output:
+Roll No:24B11AI254
+This is a vehicle 
+This vehicle is a car
+Multiple Inheritance: One derived class inherits from more than one base class.
+Syntax:
+class Base1 { // members }; class Base2 { // members }; class Derived :
+public Base1, public Base2 { // inherits both Base1 and Base2 };
+Program:
+#include<iostream> 
+using namespace std; 
+class landvehicle{ 
+public:
+landvehicle(){
+cout<<"This is a land vehicle"<<endl;
+}
+};
+class watervehicle{ public:
+watervehicle(){
+cout<<"This is a water vehicle"<<endl;
+}
+};
+class amphibiousvehicle:public watervehicle,public landvehicle{ public:
+amphibiousvehicle(){
+cout<<"This is an both land and water vehicle"<<endl;
+}
+};
+int main(){ 
+cout<<"Roll No:24B11AI254"<<endl;
+amphibiousvehicle obj; return 0;
+}
